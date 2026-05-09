@@ -1,4 +1,4 @@
-# ![Logo](pad.png) xpad
+# ![Logo](icons/pad.png) xpad
 
 Xpad is a simple xaw-using text editor that's more simple than `xedit`, much of xpad's interactions are though it's main menu accessed via right-clicking anywhere on the main and only window of xpad, and the many dialog windows.
 

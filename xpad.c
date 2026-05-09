@@ -7,12 +7,12 @@
 #include <X11/Xlib.h>
 #include <X11/Intrinsic.h>
 #include <X11/StringDefs.h>
-#include <X11/Xaw/text.h>
+#include <X11/Xaw/Text.h>
 #include <X11/Xaw/Viewport.h>
 #include <X11/Xaw/Dialog.h>
 
-#include "pad.xbm"
-#include "pad-inv.xbm"
+#include "icons/pad.xbm"
+#include "icons/pad_inv.xbm"
 #include "global.h"
 
 void act_quit()
@@ -30,10 +30,14 @@ int main(int argc, char *argv[])
 		}
 	}
 	
-	
+	Widget toplevel;
 
-	toplevel = XtInitialize
-	();
+	toplevel = XtVaAppInitialize
+	(
+		&app_context,
+		"XPad"
+		
+	);
 
 	
 }
