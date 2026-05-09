@@ -1,0 +1,2 @@
+CompileFlags:
+	Add: [-I/opt/X11/include]
