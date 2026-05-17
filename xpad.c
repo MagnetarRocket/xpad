@@ -7,11 +7,19 @@
 #include <X11/Xlib.h>
 #include <X11/Intrinsic.h>
 #include <X11/StringDefs.h>
+#include <X11/X.h>
+// #include <xcb/xkb.h>
+#include <xcb/xinput.h>
+
 //#include <X11/Xaw/Text.h>
 #include <X11/Xaw/AsciiText.h>
-#include <X11/Xaw/Panner.h>
-//#include <X11/Xaw/Viewport.h>
+//#include <X11/Xaw/Panner.h>
+#include <X11/Xaw/Viewport.h>
 #include <X11/Xaw/Dialog.h>
+#include <X11/Xaw/SimpleMenu.h>
+
+#include <X11/Xaw/Box.h>
+#include <X11/Xaw/Form.h>
 
 #include "icons/pad.xbm"
 #include "icons/pad_inv.xbm"
@@ -27,12 +35,18 @@ static char* egg =
 	exit(0);
 }*/
 
+bool filecheck(char *inputName)
+{
+
+}
+
 int main(int argc, char *argv[])
 {
 	Bool verboseSign = false;
 	Bool restrictedS = false;
 
-	for (unsigned int i; i <= argc; i++) 
+	unsigned int i = 0;
+	do 
 	{
 		if( strcmp(argv[i], "-v"))
 		{
@@ -47,7 +61,10 @@ int main(int argc, char *argv[])
 			printf("%s", egg);
 			exit(0);
 		}
-	}
+		i++;
+	} while(i <= argc);
+	i = 0; //again, for later.
+
 	XtAppContext app_context;
 	Widget toplevel, textview;
 
@@ -57,8 +74,8 @@ int main(int argc, char *argv[])
 		"XPad",
 		NULL, 0,
 		&argc, argv,
-		NULL
+		NULL, NULL
 	);
 
-	
+	XtAppMainLoop(app_context);
 }

@@ -3,4 +3,4 @@
 #include <string.h>
 
 #include <X11/Xlib.h>
-#include <X11/Xaw/text.h>
+#include <X11/Xaw/Text.h>
