@@ -14,6 +14,8 @@ Replace (filename) with the file name as needed, also please note that xpad can'
 
 `-v` Disables most of the verbosity from the runtime logs that will be found if you run xpad from a terminal.
 
+`-1` Shift clicking for menus in case the mouse button used only has one mouse button.
+
 // `-c` Makes xpad use the IBM-devloped common user guidelines-defined keyboard shortcuts.
 
 ## Building
