@@ -37,7 +37,9 @@ static char* egg =
 
 bool filecheck(char *inputName)
 {
+	
 
+	return 0;
 }
 
 int main(int argc, char *argv[])
