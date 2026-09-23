@@ -5,7 +5,7 @@ much of xpad's interactions are though it's main menu accessed via
 right-clicking anywhere on the main and only window of xpad, and the 
 many dialog windows.
 
-Also, xpad does not have any built-in lisp interpiters like xedit, and 
+Also, xpad does not have any built-in lisp interpreters like xedit, and 
 anything more then "edit, open, find, replace, and save" will not be 
 included in xpad. In short, an alternate-timeline classic notepad.exe
 
@@ -36,3 +36,6 @@ keyboard shortcuts.
 
 * Currently there is no save checking, this might be changed in the
 future.
+
+* Undo and redo are not implemented until a later date or by someone
+else.
