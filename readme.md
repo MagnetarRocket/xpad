@@ -22,7 +22,11 @@ xpad can't handle more than one file.
 `-v` Disables most of the verbosity from the runtime logs that will be 
 found if you run xpad from a terminal.
 
-`-1` Shift clicking for menus in case the mouse button used only has one
+`-r` Enables restricted mode, only the file opened with arguements can 
+be viewed; opening, cutting, deleteing text, saving, and save-as 
+functionality is phrobited.
+
+// `-1` Shift clicking for menus in case the mouse button used only has one
 mouse button.
 
 // `-c` Makes xpad use the IBM-devloped common user guidelines-defined 
