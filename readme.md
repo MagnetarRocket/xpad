@@ -26,7 +26,7 @@ found if you run xpad from a terminal.
 be viewed; opening, cutting, deleteing text, saving, and save-as 
 functionality is phrobited.
 
-// `-1` Shift clicking for menus in case the mouse button used only has one
+// `-1` Control clicking for menus in case the mouse button used only has one
 mouse button.
 
 // `-c` Makes xpad use the IBM-devloped common user guidelines-defined 
