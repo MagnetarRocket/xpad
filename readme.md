@@ -41,5 +41,9 @@ keyboard shortcuts.
 * Currently there is no save checking, this might be changed in the
 future.
 
+* Xpad when given a arguement with mutiple files will always pick the
+last one from a list. This matches what xedit would do if given a simular
+set of multiple file arguements.
+
 * Undo and redo are not implemented until a later date or by someone
 else.

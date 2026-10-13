@@ -2,7 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdarg.h>
-#include <stdbool.h>
+// #include <stdbool.h>
+#include <unistd.h>
 
 #include <X11/Xlib.h>
 #include <X11/Intrinsic.h>
@@ -34,38 +35,62 @@ static char* egg =
 	XtDestroyApplicationContext(app_context);
 	exit(0);
 }*/
-
+/*
 bool filecheck(char *inputName)
 {
 	
 
 	return 0;
-}
+}*/
 
 int main(int argc, char *argv[])
 {
-	Bool verboseSign = false;
-	Bool restrictedS = false;
+	int verboseSign = 0;
+	int restrictedS = 0;
+	int shiftClickS = 0;
 
 	unsigned int i = 0;
 	do 
 	{
 		if( strcmp(argv[i], "-v"))
 		{
-			verboseSign = true;
+			printf("Verbosity on\n");
+			verboseSign = 1;
 		}
 		if(strcmp(argv[i], "-r") )
 		{
-			restrictedS = true;
+			printf("Restricted mode on");
+			restrictedS = 1;
 		}
 		if (strcmp(argv[i], "--") ) 
 		{
 			printf("%s", egg);
 			exit(0);
 		}
+		if (strcmp(argv[i], "-1"))
+		{
+			printf("Shift clicking mode on")
+			shiftClickS = 1;
+			
+		}
+		
+		if (access(argv[i]) == 0)
+		{
+			
+		}
+		else
+		{
+			if (verboseSign)
+			{
+			printf("%s is not a valid path for a unknown reason, please remember that the last\n string will always be the file name.", argv[i]);
+			printf("Starting with no file...");
+			}
+		}
+		
 		i++;
 	} while(i <= argc);
-	i = 0; //again, for later.
+	
+		i = 0; //again, for later.
 
 	XtAppContext app_context;
 	Widget toplevel, textview;
